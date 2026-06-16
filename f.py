@@ -1,0 +1,1 @@
+print("Sawasdee game tam ar rai yu")
