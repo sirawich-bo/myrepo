@@ -1,1 +1,2 @@
 print('Minecraft')
+print('Minecraft')
