@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Page</title>
+</head>
+<body>
+    <h1>กรอกข้อมูลของคุณ</h1>
+    <form id="user-form">
+        <label for="name">ชื่อ-นามสกุล:</label>
+        <input type="text" id="name" name="name" placeholder="กรอกชื่อของคุณ"><br><br>
+        
+        <label for="email">อีเมล:</label>
+        <input type="email" id="email" name="email" placeholder="example@email.com"><br><br>
+        
+        <button type="submit" id="submit-btn">ยืนยันข้อมูล</button>
+    </form>
+
+    <!-- ข้อความที่จะแสดงขึ้นมาหลังจากกด Submit -->
+    <p id="success-message" style="display:none; color: green;">บันทึกข้อมูลสำเร็จ!</p>
+
+    <script>
+        // สคริปต์จำลองการทำงานเมื่อกด Submit
+        document.getElementById('user-form').addEventListener('submit', function(e) {
+            e.preventDefault(); // ป้องกันการรีเฟรชหน้าเว็บ
+            document.getElementById('success-message').style.display = 'block';
+        });
+    </script>
+</body>
+</html>
